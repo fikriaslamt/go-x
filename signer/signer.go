@@ -21,7 +21,7 @@ const (
 type Signer interface {
 	Sign(message []byte) (string, error)
 	SignOut4(message []byte) (string, error)
-	Verify(message []byte, signature string) error
+	Verify1(message []byte, signature string) error
 }
 
 // Utility functions to generate RSA keys
