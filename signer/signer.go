@@ -20,7 +20,7 @@ const (
 // Signer is the interface for signing and verifying
 type Signer interface {
 	Sign(message []byte) (string, error)
-	SignOuter(message []byte) (string, error)
+	SignOuteramin(message []byte) (string, error)
 	Verify(message []byte, signature string) error
 }
 
